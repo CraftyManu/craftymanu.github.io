@@ -1,0 +1,101 @@
+:root {
+    --light-background: #FBF7F7;
+    --soft-green: #B0C795;
+    --teal: #127475;
+    --dark-navy: #071324;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+}
+
+ .pattern {
+    display: grid;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}  
+
+.background-img-div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 350px; 
+    width: 300px;  
+}
+
+#background-img-div-socks {
+    background: var(--light-background) url(https://images4-f.ravelrycache.com/uploads/craftyManu/793978829/20210622_155527_medium.jpg) no-repeat center;
+    background-size: contain;
+}
+
+#background-img-div-mittens {
+    background: var(--light-background) url(https://mimostejidosartesanales.files.wordpress.com/2020/04/imagen1-3.png) no-repeat center; 
+    background-size: cover;
+}
+
+.semi-transparent-div {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* -webkit-backdrop-filter: blur(5px); */
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* grid display: */
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.align-right {
+    justify-content: right;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
